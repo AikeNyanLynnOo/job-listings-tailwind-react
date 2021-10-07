@@ -1,8 +1,10 @@
 {
-  "name": "tailwind-test",
+  "name": "job-listing-tailwind-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
+    "@craco/craco": "^6.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -12,6 +14,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "build:css" : "npx tailwindcss -i src/styles/tailwind.src.css -o src/styles/style.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   }
 }
