@@ -32243,13 +32243,18 @@ video {
 }
 
 .alert {
-  background: tomato;
-  color: #fff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  color: hsl(180, 52%, 96%);
+  /* bg */
+  color: hsl(180, 31%, 95%);
+  /* filter tablets */
+  color: hsl(180, 8%, 52%);
+  /* header bg */
+  color: hsl(180, 14%, 20%);
+  /* active btn bg*/
+}
+
+.main {
+  background-color: hsl(180, 31%, 95%);
 }
 
 @media (min-width: 640px) {
