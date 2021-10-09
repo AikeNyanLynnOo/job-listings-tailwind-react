@@ -44,9 +44,17 @@
 .remove-btn {
   background-color: hsl(179, 29%, 51%);
 }
-.tablet {
+.remove-btn:hover {
+  background-color: hsl(180, 14%, 20%);
+}
+.tablet,
+.hover-tablet {
   background-color: hsl(180, 31%, 95%);
   color: hsl(179, 29%, 51%);
+}
+.hover-tablet:hover {
+  color: hsl(180, 31%, 95%);
+  background-color: hsl(179, 29%, 51%);
 }
 .content {
   background-color: hsl(180, 31%, 95%);

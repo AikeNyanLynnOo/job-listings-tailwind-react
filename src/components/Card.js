@@ -28,13 +28,13 @@ const Card = ({ job, addFilter }) => {
       <hr className="block md:hidden my-3 bg-gray-900"/>
       <ul className="job-categiries flex flex-wrap md:justify-center">
         <li
-          className="rounded-sm tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
+          className="rounded-sm hover-tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
           onClick={() => addFilter(job.role)}
         >
           {job.role}
         </li>
         <li
-          className="rounded-sm tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
+          className="rounded-sm hover-tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
           onClick={() => addFilter(job.level)}
         >
           {job.level}
@@ -42,7 +42,7 @@ const Card = ({ job, addFilter }) => {
         {job.languages.map((lang, idx) => {
           return (
             <li
-              className="rounded-sm tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
+              className="rounded-sm hover-tablet mr-3 my-2 p-2 text-sm font-semibold cursor-pointer inline"
               key={idx}
               onClick={() => addFilter(lang)}
             >
