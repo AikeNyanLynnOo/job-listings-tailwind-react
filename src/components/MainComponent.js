@@ -65,11 +65,13 @@ class Main extends React.Component {
             alt="bg-header-desktop"
             className="bg-img"
           />
-          <FilterBar
-            selected={this.state.selected}
-            removeCat={this.removeCat}
-            removeAll={this.removeAll}
-          />
+          {(this.state.selected.length > 0 && (
+            <FilterBar
+              selected={this.state.selected}
+              removeCat={this.removeCat}
+              removeAll={this.removeAll}
+            />
+          )) || <></>}
         </div>
         <div className="content pt-16 overflow-y-scroll">
           <ul className="w-11/12 md:w-10/12 mx-auto">
