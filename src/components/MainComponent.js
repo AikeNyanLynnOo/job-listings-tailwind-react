@@ -63,7 +63,7 @@ class Main extends React.Component {
           <img
             src={"./images/bg-header-desktop.svg"}
             alt="bg-header-desktop"
-            className="bg-img"
+            className="hidden sm:block bg-img"
           />
           {(this.state.selected.length > 0 && (
             <FilterBar
