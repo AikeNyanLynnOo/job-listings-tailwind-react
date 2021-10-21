@@ -59,7 +59,7 @@ class Main extends React.Component {
 
     return (
       <div className="main">
-        <div className="header">
+        <div className="hidden sm:block header">
           <img
             src={"./images/bg-header-desktop.svg"}
             alt="bg-header-desktop"
