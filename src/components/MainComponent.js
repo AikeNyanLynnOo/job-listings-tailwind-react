@@ -73,7 +73,7 @@ class Main extends React.Component {
             />
           )) || <></>}
         </div>
-        <div className="content pt-16 overflow-y-scroll">
+        <div className="h-auto sm:h-3/4 content pt-16 overflow-y-scroll">
           <ul className="w-11/12 md:w-10/12 mx-auto">
             {updateJobs.map((job, index) => {
               return (

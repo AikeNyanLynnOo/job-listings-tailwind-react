@@ -57,7 +57,6 @@
 }
 .content {
   background-color: hsl(180, 31%, 95%);
-  height: 75vh;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .content::-webkit-scrollbar {
